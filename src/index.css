@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  --color-text-default: rgba(170, 170, 170, 1);
+  --color-text-hover: rgba(249, 249, 249, 1);
+  --color-bg-hover: rgba(66, 66, 66, 1);
+  --color-bg-default: rgba(33, 33, 33, 1);
+  --color-border-focus: rgba(60, 103, 255, 1);
+}
