@@ -130,6 +130,7 @@ export default function GroupValue({ unit }: IGroupValueProps) {
   // Handle increment
   const handleIncrement = useCallback(() => {
     const numVal = parseValue(value);
+    console.log({ numVal });
 
     if (numVal === null) {
       setValue("1");
@@ -142,7 +143,7 @@ export default function GroupValue({ unit }: IGroupValueProps) {
 
     // Nếu unit là % và newVal > 100 -> không cho tăng
     if (unit === "%" && newVal > 100) {
-      return;
+      newVal = 100;
     }
 
     const formatted = newVal?.toString();
